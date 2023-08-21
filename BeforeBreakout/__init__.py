@@ -13,7 +13,7 @@ from email.mime.multipart import MIMEMultipart
 
 from pretty_html_table import build_table
 
-def main(mytimer: func.TimerRequest) -> None:
+def main():#(mytimer: func.TimerRequest) -> None:
     ticker_list = ['PLTR','SPY','QQQ','TQQQ','SQQQ','A','AAL','AAP','AAPL','ABBV','ABC','ABT','ACN','ADBE','ADI','ADM','ADP','ADSK','AEE','AEP','AES','AFL','AIG','AIZ','AJG','AKAM','ALB','ALGN','ALK','ALL','ALLE',
                    'AMAT','AMCR','AMD','AME','AMGN','AMP','AMT','AMZN','ANET','ANSS','ANTM','AON','AOS','APA','APD','APH','APTV','ARE','ATO','ATVI','AVB','AVGO','AVY','AWK','AXP',
                    'AZO','BA','BAC','BAX','BBWI','BBY','BDX','BEN','BF.B','BIIB','BIO','BK','BKNG','BKR','BLK','BLL','BMY','BR','BRK.B','BRO','BSX','BWA','BXP','C','CAG','CAH','CARR','CAT'
@@ -77,3 +77,5 @@ def main(mytimer: func.TimerRequest) -> None:
         is_consolidating(ticker,data,2)
     
     send_consolidation_list()
+
+main()
